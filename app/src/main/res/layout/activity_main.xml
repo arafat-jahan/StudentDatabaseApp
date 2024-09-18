@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ECEEEF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student DATABASE"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/firstnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:backgroundTint="#BBDEFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/lastnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:backgroundTint="#BBDEFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameEt"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/rollnoEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"
+        android:inputType="number"
+        android:padding="12dp"
+        android:backgroundTint="#BBDEFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameEt"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollnoEt" />
+
+
+    <EditText
+        android:id="@+id/searchbyidEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search By ID"
+        android:inputType="number"
+        android:padding="12dp"
+        android:backgroundTint="#BBDEFB"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+    <Button
+        android:id="@+id/searchbt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1976D2"
+        android:paddingVertical="12dp"
+        android:text="Search"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbyidEt" />
+
+    <Button
+        android:id="@+id/deletebt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#D32F2F"
+        android:paddingVertical="12dp"
+        android:text="Delete All"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbyidEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
